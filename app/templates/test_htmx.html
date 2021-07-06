@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}HTMX Test{% endblock %}
+
+{% block body %}
+
+<table .hx-indicator=".htmx-indication">
+
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>ID</th>
+    <thead>
+
+    <tbody>
+    
+
+
+        <tr hx-get="/demo?page=1"
+            hx-trigger="revealed"
+            hx-swap="afterend"
+        >
+            <td>Agent Smith</td>
+            <td>void29@null.org</td>
+            <td>55F49448C0</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+{% endblock body %}
