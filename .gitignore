@@ -2,3 +2,6 @@ env
 .env
 instance/
 __pycache__
+*.minpkt.css
+*.minpkt.js
+.webassets-cache

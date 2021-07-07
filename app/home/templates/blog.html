@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Blog{% endblock title %}
+
+{% block body %}
+
+{% for excerpt in excerpts %}
+    {% include "excerpt.html" %}
+{% endfor %}
+
+{% endblock body %}

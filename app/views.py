@@ -4,24 +4,24 @@ from flask import render_template
 
 @app.route('/')
 def home1():
-    return render_template('layout.html')
+    return render_template('./home/templates/layout.html')
 
 @app.route('/news')
 def news():
-    return render_template('layout.html')
+    return render_template('home/templates/layout.html')
 @app.route('/about')
 def about():
-    return render_template('layout.html')
+    return render_template('home/templates/layout.html')
 @app.route('/contact')
 def contact():
-    return render_template('layout.html')
+    return render_template('home/templates/layout.html')
 @app.route('/home')
 def home():
-    return render_template('layout.html')
+    return render_template('home/templates/layout.html')
 
 @app.route('/htmx')
 def htmx():
-    return render_template('test_htmx.html')
+    return render_template('home/templates/test_htmx.html')
 
 @app.route('/demo')
 def demo():

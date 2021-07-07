@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, Blueprint, render_template
 
 app = Flask(__name__, instance_relative_config=True)
 
@@ -11,4 +11,7 @@ app.config.from_pyfile('config.py')
 app.config.from_envvar('APP_CONFIG_FILE')
 
 from .util import assets  # nopep8
-from . import views  # nopep8
+# from . import views  # nopep8
+
+from .home import home # nopep8
+app.register_blueprint(home)
