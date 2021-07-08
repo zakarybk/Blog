@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% assets "htmx" %}
-        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-    {% endassets %}
-    {% assets "css" %}
-        <link rel="stylesheet" href="{{ ASSET_URL }}" />
-    {% endassets %}
-    {% block head %}{% endblock head %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %} {% assets "css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %} {% block head %}{% endblock head %}
     <title>{% block title %}{% endblock title %}</title>
-</head>
-<body>
-    {% include 'header.html' %}
-
-    {% block body %}
-
-    {% endblock body %}
-
-    {% include 'footer.html' %}
-</body>
+  </head>
+  <body>
+    {% include 'header.html' %} {% block body %} {% endblock body %} {% include
+    'footer.html' %}
+  </body>
 </html>
