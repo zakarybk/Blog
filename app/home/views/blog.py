@@ -7,6 +7,11 @@ home = Blueprint(
     static_folder="../../static"
 )
 
+class Post():
+    def __init__(self, title, excerpt):
+        self.title = title
+        self.excerpt = excerpt
+
 @home.route('/blog')
 def blog():
-    return render_template('blog.html', excerpts=['one', 'two', 'three'])
+    return render_template('blog.html', excerpts=[Post('one', 'first')])
