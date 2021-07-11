@@ -8,7 +8,7 @@ bundles = {
         filters='cssmin',
         output='style.minpkt.css'
     ),
-    'htmx': Bundle('js/lib/htmx.1.4.1.min.js.gz')
+    # 'htmx': Bundle('js/lib/htmx.1.4.1.min.js.gz') # ignore and use cdn for now
 }
 
 assets = Environment(app)
