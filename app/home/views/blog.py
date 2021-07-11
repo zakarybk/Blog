@@ -25,4 +25,4 @@ post2 = Post('Some other post', 'Not much to say here')
 
 @home.route('/blog')
 def blog():
-    return render_template('blog.html', excerpts=[post1, post2])
+    return render_template('blog.html', excerpts=[post1 for p in range(50)])

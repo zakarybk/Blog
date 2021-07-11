@@ -18,6 +18,10 @@ html {
     font-family: var(--font);
 }
 
+body {
+    padding-top: 50px;
+}
+
 h1 {
     font-size: 5rem;
     font-family: var(--font);
@@ -93,6 +97,9 @@ div {
         transform: translate(-50%);
     }
 }
+.top-nav__header {
+    box-shadow: 0px 1rem 2rem -1rem rgba(0,0,0,.7);
+}
 
 
 /*
@@ -116,7 +123,13 @@ div {
     Excerpt
 */
 .excerpt-card {
-    padding-bottom: 1em;
+    width: 100%;
+
+    padding-bottom: 5px;
+
+    border-color: cyan;
+    /* border-bottom: cornsilk; */
+    border-style: solid;
 }
 .excerpt-card::after {
     padding: 0;
