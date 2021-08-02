@@ -1,6 +1,10 @@
-<div class="card excerpt-card" style="border-bottom-color: #ffd40085; border-style: dashed">
-  <div class="card-body excerpt-body">
+<div class="card excerpt-card">
+  <div class="card-body excerpt-body" style="position:relative;">
+    {# <button class=".excerpt-card__btn"> #}
     <h2>{{excerpt.title}}</h2>
     <p>{{excerpt.excerpt}}</p>
+    {# </button> #}
   </div>
+  <div class="excerpt-border" style="position:absolute; border-color: #ffd40085; border-style: dashed">
+    </div>
 </div>
